@@ -19,7 +19,7 @@ FORMART_PROMPT = """
 """
 
 # Load the JSON file
-file_path = '/home/svu/eleztyi/ericzhu/code/nanozero/data.jsonl'  # Replace with the path to your uploaded JSON file
+file_path = 'data.jsonl'  # Replace with the path to your uploaded JSON file
 
 def load_jsonl(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
@@ -84,7 +84,7 @@ def answer_reward_func(completions, answer, **kwargs):
 # training args
 
 training_args = GRPOConfig(
-    output_dir="/home/svu/eleztyi/ericzhu/code/nanozero/Qwen2.5-3B-GRPO", 
+    output_dir="Qwen2.5-3B-GRPO", 
     run_name="Qwen2.5-3B-GRPO",
     bf16=True,
     save_steps=100,
