@@ -18,7 +18,6 @@ FORMART_PROMPT = """
 </answer>
 """
 
-# Load the JSON file
 file_path = 'data.jsonl'  # Replace with the path to your uploaded JSON file
 
 def load_jsonl(file_path):
@@ -41,7 +40,6 @@ dataset = Dataset.from_dict(data_dict)
 
 print(dataset)
 print(dataset[0])
-
 
 # ##########################################################################################################
 # # reward model/fuctions ( only fuctions @_@ )
